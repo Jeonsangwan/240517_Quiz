@@ -13,10 +13,10 @@ def is_valid_number(number):
     remainder = total % 11
 
     # 11에서 나머지를 뺀 값의 10으로 나눈 나머지
-    check_digit = (11 - remainder) % 10
+    result_num = (11 - remainder) % 10
 
     # 계산된 값과 실제 주민등록번호의 13번째 자리 비교
-    return check_digit == int(number[12])
+    return result_num == int(number[12])
 
 user_number = input("주민등록번호를 입력하세요: ")
 
